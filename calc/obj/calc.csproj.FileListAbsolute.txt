@@ -1,0 +1,8 @@
+D:\code\C++\exp\rex\calc\calc\bin\Debug\calc.exe
+D:\code\C++\exp\rex\calc\calc\bin\Debug\calc.pdb
+D:\code\C++\exp\rex\calc\calc\obj\Debug\ResolveAssemblyReference.cache
+D:\code\C++\exp\rex\calc\calc\obj\Debug\calc.frm_main.resources
+D:\code\C++\exp\rex\calc\calc\obj\Debug\calc.Properties.Resources.resources
+D:\code\C++\exp\rex\calc\calc\obj\Debug\calc.csproj.GenerateResource.Cache
+D:\code\C++\exp\rex\calc\calc\obj\Debug\calc.exe
+D:\code\C++\exp\rex\calc\calc\obj\Debug\calc.pdb
