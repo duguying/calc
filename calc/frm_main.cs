@@ -14,6 +14,7 @@ namespace calc
         public static double num1 = 0;
         public static double num2 = 0;
         public static uint operation = 0; // 0=>null, 1=>+, 2=>-, 3=>*, 4=>/
+        public static bool append = false;
 
         public frm_main()
         {
@@ -97,7 +98,7 @@ namespace calc
         // 将输入的数据解析为数字
         private void key_input_num(string input) {
             // 没输运算符
-            if (operation == 0)
+            if (append == true)
             {
                 lb_screen.Text += input;
                 if(input=="."){
@@ -113,9 +114,13 @@ namespace calc
                     status = 0;
                     lb_screen.Text = "ERROR!";
                 }
-            }else if(operation!=0){
+            }else if(append == false){
                 lb_screen.Text = input.ToString();
-                status = 3;
+                append = true;
+                if(operation!=0){
+                    status = 3;
+                }
+                
             }
 
         }
@@ -129,6 +134,7 @@ namespace calc
                 operation = 4; /* ÷ */
                 num1 = double.Parse(lb_screen.Text);
                 lb_status.Text = "数2";
+                append = false;
             }
         }
 
@@ -141,6 +147,7 @@ namespace calc
                 operation = 3; //x
                 num1 = double.Parse(lb_screen.Text);
                 lb_status.Text = "数2";
+                append = false;
             }
         }
 
@@ -152,6 +159,7 @@ namespace calc
                 operation = 2; //-
                 num1 = double.Parse(lb_screen.Text);
                 lb_status.Text = "数2";
+                append = false;
             }
 
         }
@@ -164,6 +172,7 @@ namespace calc
                 operation = 1; //+
                 num1 = double.Parse(lb_screen.Text);
                 lb_status.Text = "数2";
+                append = false;
             }
         }
 

@@ -123,7 +123,7 @@
             // 
             // btn_run
             // 
-            this.btn_run.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_run.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.btn_run.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold);
             this.btn_run.ForeColor = System.Drawing.Color.White;
             this.btn_run.Location = new System.Drawing.Point(145, 200);
